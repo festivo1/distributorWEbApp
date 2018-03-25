@@ -16,6 +16,5 @@ com/utsicom/webapp/dao/ItemDAO.class
 com/utsicom/webapp/entity/Item.class
 com/utsicom/webapp/dao/impl/ItemDAOImpl.class
 com/utsicom/webapp/dto/TransactionDTO.class
-.netbeans_automatic_build
 com/utsicom/webapp/controller/DefaultController.class
 com/utsicom/webapp/dao/impl/DipoDAOImpl.class
