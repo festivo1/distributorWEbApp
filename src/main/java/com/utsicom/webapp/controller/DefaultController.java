@@ -25,13 +25,8 @@ public class DefaultController {
     @Autowired
     DipoDAO dipoDAO;
     @RequestMapping(method = RequestMethod.GET)
-    public String index(Model model){
-         model.addAttribute("dipos", dipoDAO.getAll());
-        return "admin/dipos/index";
-    }
-    @RequestMapping(value = "api/dipo", method = RequestMethod.GET)
-    public List<Dipo> listOfDipo(){
-        return dipoDAO.getAll();
+    public String index(){
+         return "admin/background";
     }
     
 }

@@ -6,11 +6,12 @@
 package com.utsicom.webapp.dao;
 
 import com.utsicom.webapp.entity.Transaction;
+import java.util.List;
 
 /**
  *
  * @author utsi
  */
 public interface TransactionDAO extends GenericDAO<Transaction>{
-    
+    List createViewById(int id);
 }

@@ -86,14 +86,4 @@ public abstract class GenericDAOImpl<T> implements GenericDAO<T> {
 
     }
 
-    @Override
-    public List<T> getByName(String name) {
-        return null;
-        
-    }
-
-
-        
-    
-
-}
+  }

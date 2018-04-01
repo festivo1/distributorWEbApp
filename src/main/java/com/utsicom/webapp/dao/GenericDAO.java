@@ -24,6 +24,6 @@ public interface GenericDAO<T> {
 
     T getById(int id) ;
 
-    List<T> getByName(String name) ;
+    
 
 }
