@@ -13,5 +13,5 @@ import java.util.List;
  * @author utsi
  */
 public interface TransactionDAO extends GenericDAO<Transaction>{
-    List createViewById(int id);
+    List<Transaction> getAllByDipo(int id);
 }

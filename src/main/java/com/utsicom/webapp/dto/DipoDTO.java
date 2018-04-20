@@ -5,8 +5,6 @@
  */
 package com.utsicom.webapp.dto;
 
-import java.util.Date;
-
 /**
  *
  * @author utsi

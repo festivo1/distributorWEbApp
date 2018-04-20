@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: distributorWebApp
+Implementation-Version: 1.0
+Built-By: utsi
+Implementation-Vendor-Id: com.utsicom
+Created-By: Apache Maven 3.0.5
+Build-Jdk: 1.8.0_151
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/distributorWebApp
+

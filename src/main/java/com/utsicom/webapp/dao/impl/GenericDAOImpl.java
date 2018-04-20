@@ -13,9 +13,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-//import org.hibernate.usertype.ParameterizedType;
-//import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  *
@@ -44,6 +41,10 @@ public abstract class GenericDAOImpl<T> implements GenericDAO<T> {
         return session.createCriteria(persistClass).list();
 
     }
+    
+        
+
+    
     @Override
     public void insert(T t) {
         session = (Session) sessionFactory.openSession();
@@ -77,7 +78,7 @@ public abstract class GenericDAOImpl<T> implements GenericDAO<T> {
          
 
     }
-
+     
     @Override
     public T getById(int id) {
          session = sessionFactory.openSession();
@@ -85,5 +86,13 @@ public abstract class GenericDAOImpl<T> implements GenericDAO<T> {
         return  (T) session.get(persistClass, id);
 
     }
+    @Override
+    public T getByName(String name){
+         session = sessionFactory.openSession();
 
+        return  (T) session.get(persistClass, name);
+        
+    }
+
+  
   }

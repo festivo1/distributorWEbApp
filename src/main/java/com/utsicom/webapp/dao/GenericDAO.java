@@ -15,7 +15,7 @@ import java.util.List;
 public interface GenericDAO<T> {
 
     List<T> getAll() ;
-
+    //List<T> getAllByDipo(String dipoName) ;
     void insert(T t) ;
 
     boolean delete(int id);
@@ -23,7 +23,7 @@ public interface GenericDAO<T> {
     void update(T t) ;
 
     T getById(int id) ;
-
+    T getByName(String name);
     
 
 }

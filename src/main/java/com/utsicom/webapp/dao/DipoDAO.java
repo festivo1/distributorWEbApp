@@ -6,11 +6,15 @@
 package com.utsicom.webapp.dao;
 
 import com.utsicom.webapp.entity.Dipo;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author utsi
  */
+@Service
 public interface DipoDAO extends GenericDAO<Dipo>{
+
+    public Dipo loginDipo(String userId, String password);
     
 }

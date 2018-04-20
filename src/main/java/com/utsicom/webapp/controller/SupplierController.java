@@ -5,7 +5,6 @@
  */
 package com.utsicom.webapp.controller;
 
-import com.utsicom.webapp.dao.ItemDAO;
 import com.utsicom.webapp.dao.SupplierDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

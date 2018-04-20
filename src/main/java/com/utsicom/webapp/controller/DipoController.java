@@ -6,6 +6,7 @@
 package com.utsicom.webapp.controller;
 
 import com.utsicom.webapp.dao.DipoDAO;
+import com.utsicom.webapp.dao.SupplierDAO;
 import com.utsicom.webapp.dto.DipoDTO;
 import com.utsicom.webapp.entity.Dipo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +25,12 @@ public class DipoController {
    
     @Autowired
     DipoDAO dipoDAO;
-    @RequestMapping(method = RequestMethod.GET)
+    @Autowired
+    SupplierDAO supplierDAO;
+    @RequestMapping( method = RequestMethod.GET)
     public String index(Model model){
          model.addAttribute("dipos", dipoDAO.getAll());
+         
         return "admin/dipos/index";
     }
     @RequestMapping(value = "/create")
