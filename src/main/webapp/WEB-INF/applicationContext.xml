@@ -2,6 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:p="http://www.springframework.org/schema/p"
+<<<<<<< HEAD
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
         http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
 ">
@@ -14,6 +15,18 @@
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <property name="dataSource" ref="dataSource"/>
     </bean>
+=======
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+">
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+          p:location="/WEB-INF/db/jdbc.properties"/>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+      p:url="${jdbc.url}"
+          p:username="${jdbc.username}" p:password="${jdbc.password}"/>
+
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 
         <property name="dataSource" ref="dataSource"/>
@@ -29,5 +42,9 @@
             </props>
         </property>
     </bean>
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
 </beans>

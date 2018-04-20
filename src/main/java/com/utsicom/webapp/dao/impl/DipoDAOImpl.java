@@ -7,6 +7,7 @@ package com.utsicom.webapp.dao.impl;
 
 import com.utsicom.webapp.dao.DipoDAO;
 import com.utsicom.webapp.entity.Dipo;
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -29,4 +30,11 @@ class DipoDAOImpl extends GenericDAOImpl<Dipo> implements DipoDAO {
 //        return null;
 
     //   }
+=======
+import org.springframework.stereotype.Repository;
+
+@Repository(value = "DipoDAO")
+public class DipoDAOImpl extends GenericDAOImpl<Dipo> implements DipoDAO{
+    
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
 }

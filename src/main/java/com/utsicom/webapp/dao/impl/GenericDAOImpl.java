@@ -13,6 +13,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
+<<<<<<< HEAD
+=======
+import org.springframework.stereotype.Repository;
+//import org.hibernate.usertype.ParameterizedType;
+//import org.springframework.beans.factory.annotation.Autowired;
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
 
 /**
  *
@@ -41,10 +47,13 @@ public abstract class GenericDAOImpl<T> implements GenericDAO<T> {
         return session.createCriteria(persistClass).list();
 
     }
+<<<<<<< HEAD
     
         
 
     
+=======
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
     @Override
     public void insert(T t) {
         session = (Session) sessionFactory.openSession();
@@ -78,7 +87,11 @@ public abstract class GenericDAOImpl<T> implements GenericDAO<T> {
          
 
     }
+<<<<<<< HEAD
      
+=======
+
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
     @Override
     public T getById(int id) {
          session = sessionFactory.openSession();
@@ -86,6 +99,7 @@ public abstract class GenericDAOImpl<T> implements GenericDAO<T> {
         return  (T) session.get(persistClass, id);
 
     }
+<<<<<<< HEAD
     @Override
     public T getByName(String name){
          session = sessionFactory.openSession();
@@ -96,3 +110,17 @@ public abstract class GenericDAOImpl<T> implements GenericDAO<T> {
 
   
   }
+=======
+
+    @Override
+    public List<T> getByName(String name) {
+        return null;
+        
+    }
+
+
+        
+    
+
+}
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18

@@ -5,7 +5,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<<<<<<< HEAD
   <title>DipoAdmin | Log in</title>
+=======
+  <title>Dixanta's CRM | Log in</title>
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -32,7 +36,11 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
+<<<<<<< HEAD
     <a href="${SITE_URL}/dashboard"><b>Dipo's </b>Transactions</a>
+=======
+    <a href="${SITE_URL}/dashboard"><b>Dixanta's </b>CRM</a>
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">

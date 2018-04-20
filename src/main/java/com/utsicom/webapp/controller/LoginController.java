@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ///*
 // * To change this license header, choose License Headers in Project Properties.
 // * To change this template file, choose Tools | Templates
@@ -48,3 +49,31 @@
 //    }
 //
 //}
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.utsicom.webapp.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+/**
+ *
+ * @author utsi
+ */
+@Controller
+@RequestMapping(value = "/login")
+public class LoginController {
+
+    @RequestMapping(method = RequestMethod.GET)
+    public String index() {
+        //model.addAttribute("dipos", dipoDAO.getAll());
+        return "login/index";
+
+    }
+}
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18

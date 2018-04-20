@@ -7,10 +7,13 @@ package com.utsicom.webapp.dao.impl;
 
 import com.utsicom.webapp.dao.TransactionDAO;
 import com.utsicom.webapp.entity.Transaction;
+<<<<<<< HEAD
 import java.util.List;
 import org.hibernate.query.Query;
 
 //import javax.persistence.Query;
+=======
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
 import org.springframework.stereotype.Repository;
 
 /**
@@ -18,6 +21,7 @@ import org.springframework.stereotype.Repository;
  * @author utsi
  */
 @Repository(value = "TransactionDAO")
+<<<<<<< HEAD
 public class TransactionDAOImpl extends GenericDAOImpl<Transaction> implements TransactionDAO {
 
     // @Autowired(required = true)
@@ -51,4 +55,8 @@ public class TransactionDAOImpl extends GenericDAOImpl<Transaction> implements T
 
     }
 
+=======
+public class TransactionDAOImpl extends GenericDAOImpl<Transaction> implements TransactionDAO{
+    
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
 }

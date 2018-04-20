@@ -1,4 +1,5 @@
 /*
+<<<<<<< HEAD
  * Copyright 2018 utsi.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,6 +13,11 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+=======
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
  */
 package com.utsicom.webapp.entity;
 
@@ -176,6 +182,9 @@ public class Transaction implements Serializable {
     public void setSupplier(Supplier supplier) {
         this.supplier = supplier;
     }
+<<<<<<< HEAD
 
     
+=======
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
 }

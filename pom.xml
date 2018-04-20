@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <project
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
     xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -37,16 +38,38 @@
             <type>war</type>
         </dependency>
         <dependency>
+=======
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.utsicom.webapp</groupId>
+    <artifactId>distributorWebApp</artifactId>
+    <version>1.0</version>
+    <packaging>war</packaging>
+
+    <name>distributorWebApp</name>
+
+    <properties>
+        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>8.0</version>
             <scope>provided</scope>
         </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>4.3.13.RELEASE</version>
         </dependency>
+=======
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
         
         <dependency>
             <groupId>org.springframework</groupId>
@@ -62,9 +85,15 @@
         </dependency>
         
         <dependency>
+<<<<<<< HEAD
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.2.1</version>
+=======
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
         </dependency>
        
         <!--        for rest api-->
@@ -93,6 +122,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
+<<<<<<< HEAD
             <version>5.2.16.Final</version>
         </dependency>
 
@@ -108,6 +138,10 @@
             
         </dependency>
 
+=======
+            <version>4.3.11.Final</version>
+        </dependency>
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
         
         <!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
         <dependency>
@@ -115,6 +149,7 @@
             <artifactId>modelmapper</artifactId>
             <version>0.7.5</version>
         </dependency>
+<<<<<<< HEAD
        
         
     </dependencies>
@@ -154,6 +189,62 @@
                 </configuration>
             </plugin>
 
+=======
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <compilerArguments>
+                        <endorseddirs>${endorsed.dir}</endorseddirs>
+                    </compilerArguments>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+<!--                        <phase>validate</phase>-->
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${endorsed.dir}</outputDirectory>
+                            <silent>true</silent>
+                            <artifactItems>
+                                <artifactItem>
+<!--                                <groupId>javax</groupId>
+                                    <artifactId>javaee-endorsed-api</artifactId>
+                                    <version>7.0</version>
+                                    <type>jar</type>-->
+                                     <groupId>com.github.jsimone</groupId>
+                                    <artifactId>webapp-runner</artifactId>
+                                    <version>8.0.30.2</version>
+                                    <destFileName>webapp-runner.jar</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
         </plugins>
     </build>
 

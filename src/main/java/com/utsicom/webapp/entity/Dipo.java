@@ -1,4 +1,5 @@
 /*
+<<<<<<< HEAD
  * Copyright 2018 utsi.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,6 +13,11 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+=======
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
  */
 package com.utsicom.webapp.entity;
 
@@ -19,7 +25,10 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Basic;
+<<<<<<< HEAD
 import javax.persistence.CascadeType;
+=======
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -46,6 +55,7 @@ public class Dipo implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+<<<<<<< HEAD
     
     @Column(name = "id")
     private Integer id;
@@ -59,16 +69,35 @@ public class Dipo implements Serializable {
     @Column(name = "contact_number")
     private String contactNumber;
     
+=======
+    @Basic(optional = false)
+    @Column(name = "id")
+    private Integer id;
+    @Size(max = 80)
+    @Column(name = "name")
+    private String name;
+    @Size(max = 20)
+    @Column(name = "address")
+    private String address;
+    @Size(max = 15)
+    @Column(name = "contact_number")
+    private String contactNumber;
+    @Size(max = 15)
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
     @Column(name = "pan_number")
     private String panNumber;
     @Column(name = "added_date", insertable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date addedDate;
+<<<<<<< HEAD
     @Size(max = 50)
     @Column(name = "password")
     private String password;
  
     @OneToMany(mappedBy = "dipo")
+=======
+    @OneToMany(mappedBy = "dipo") // mappedby ma Entity name not by id
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
     private List<Transaction> transactionList;
 
     public Dipo() {
@@ -126,6 +155,7 @@ public class Dipo implements Serializable {
         this.addedDate = addedDate;
     }
 
+<<<<<<< HEAD
     public String getPassword() {
         return password;
     }
@@ -135,6 +165,8 @@ public class Dipo implements Serializable {
     }
 
 
+=======
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
     public List<Transaction> getTransactionList() {
         return transactionList;
     }
@@ -143,4 +175,32 @@ public class Dipo implements Serializable {
         this.transactionList = transactionList;
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+    public int hashCode() {
+        int hash = 0;
+        hash += (id != null ? id.hashCode() : 0);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
+        if (!(object instanceof Dipo)) {
+            return false;
+        }
+        Dipo other = (Dipo) object;
+        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "com.utsicom.webapp.entity.Dipo[ id=" + id + " ]";
+    }
+    
+>>>>>>> d542b4c8efb969e2dcced03e5d9df65f72be5e18
 }
